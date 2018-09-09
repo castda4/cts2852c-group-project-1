@@ -1,0 +1,22 @@
+body {
+  background-color: #ddd;
+}
+h2 {
+  color: #5470a3;
+}
+.add {
+  background-color: red;
+  color: white;
+}
+.sub {
+  background-color: orange;
+  color: white;
+}
+.mult {
+  background-color: blue;
+  color: white;
+}
+.div {
+  background-color: green;
+  color: white;
+}
