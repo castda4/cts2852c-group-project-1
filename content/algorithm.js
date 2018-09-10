@@ -1,80 +1,103 @@
-function addition() {
-    var num1 = Number(prompt("Enter the first number you would like to add."));
-    var sum = num1+num2;
-    
-    
-    if( isNaN(num1) || num1=== "" ){
+function addition()
+{
+  // initialize variables
+  var sum, num1, num2;
 
+  // check for first number
+   num1 = parseFloat(prompt("Enter first number",""));
+  if (isNaN(num1)) {
         alert("Invalid First number");
-        
-    }
 
-    var num2 = Number(prompt("Enter the second number you would like to add."));
-     if (isNaN(num2) || num2=== ""){
-        alert("Invalid Second number");
-    }
+  }
 
-    alert(num1 + "+" +num2+"="+ sum);
-}
-
-function subtraction() {
-    var num1 = Number(prompt("Enter the First number you want to Subtract."));
-     var sum = num1-num2;
-    
-
-    if( isNaN(num1) || num1=== "" ){
-
-alert("Invalid First number");
-            }
-
-            var num2 = Number(prompt("Enter the Second number you want to Subtract."));
-           
-            if (isNaN(num2) || num2=== ""){
-            alert("Invalid Second number");
-                }
-
-    alert(num1+"-"+num2+"="+sum);
-}
-
-function multiplication(){
-    
-    var num1 = Number(prompt("Enter the First number you want to Multiply."));
-    var sum = num1*num2;
-    
-
-    
-    
-    if(  isNaN(num1) || num1=== "" ){
+  // check for second number
+  num2 = parseFloat(prompt("Enter second number",""));
+  if (isNaN(num2)) {
 
     alert("Invalid First number");
-        }
-    
-        var num2 = Number(prompt("Enter the Second number you want to Multiply."));
+  }
 
-        if (isNaN(num2) || num2=== ""){
-    alert("Invalid Second number");
+  // the operator can be exchanged + - / *
+  sum = num1 + num2;
+
+  // alert to user
+  alert(num1 + "+" + num2 + "=" + sum);
 }
 
-    alert(num1+"*"+num2+"="+sum);
-}
+function subtraction()
+{
+  // initialize variables
+  var sum, num1, num2;
 
-function division(){
-   
+  // check for first number
+   num1 = parseFloat(prompt("Enter first number",""));
+  if (isNaN(num1)) {
+        alert("Invalid First number");
 
-    var num1 = Number(prompt("Enter the First number you want to Divide."));
-     var sum = num1/num2;
-    
+  }
 
-    if(  isNaN(num1) || num1=== "" ){
+  // check for second number
+  num2 = parseFloat(prompt("Enter second number",""));
+  if (isNaN(num2)) {
 
     alert("Invalid First number");
-    }
+  }
 
-    var num2 = Number(prompt("Enter the Second number you want to Divide."));
+  // the operator can be exchanged + - / *
+  sum = num1 - num2;
 
-    if (isNaN(num2) || num2=== ""){
-    alert("Invalid Second number");
-    }
+  // alert to user
+  alert(num1 + "+" + num2 + "=" + sum);
+}
 
-    alert(num1+"/"+num2+"="+sum);
+function multiplication()
+{
+  // initialize variables
+  var sum, num1, num2;
+
+  // check for first number
+   num1 = parseFloat(prompt("Enter first number",""));
+  if (isNaN(num1)) {
+        alert("Invalid First number");
+
+  }
+
+  // check for second number
+  num2 = parseFloat(prompt("Enter second number",""));
+  if (isNaN(num2)) {
+
+    alert("Invalid First number");
+  }
+
+  // the operator can be exchanged + - / *
+  sum = num1 * num2;
+
+  // alert to user
+  alert(num1 + "+" + num2 + "=" + sum);
+}
+
+function division()
+{
+  // initialize variables
+  var sum, num1, num2;
+
+  // check for first number
+   num1 = parseFloat(prompt("Enter first number",""));
+  if (isNaN(num1)) {
+        alert("Invalid First number");
+
+  }
+
+  // check for second number
+  num2 = parseFloat(prompt("Enter second number",""));
+  if (isNaN(num2)) {
+
+    alert("Invalid First number");
+  }
+
+  // the operator can be exchanged + - / *
+  sum = num1 / num2;
+
+  // alert to user
+  alert(num1 + "+" + num2 + "=" + sum);
 }
