@@ -24,6 +24,7 @@ function addition()
   alert(num1 + "+" + num2 + "=" + sum);
 }
 
+
 function subtraction()
 {
   // initialize variables
@@ -47,7 +48,7 @@ function subtraction()
   sum = num1 - num2;
 
   // alert to user
-  alert(num1 + "+" + num2 + "=" + sum);
+  alert(num1 + "-" + num2 + "=" + sum);
 }
 
 function multiplication()
@@ -73,7 +74,7 @@ function multiplication()
   sum = num1 * num2;
 
   // alert to user
-  alert(num1 + "+" + num2 + "=" + sum);
+  alert(num1 + "*" + num2 + "=" + sum);
 }
 
 function division()
@@ -99,5 +100,5 @@ function division()
   sum = num1 / num2;
 
   // alert to user
-  alert(num1 + "+" + num2 + "=" + sum);
+  alert(num1 + "/" + num2 + "=" + sum);
 }
