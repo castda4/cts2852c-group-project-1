@@ -28,11 +28,11 @@ function addition()
 function subtraction(){
 
   // initialize variables
-  var x; 
+  var x;
   var y;
   var z;
-  
-  // check first number is a number 
+
+  // check first number is a number
    x = parseFloat(prompt("Enter first number",""));
   if(isNaN(x)){
     alert("Please enter a number.");
@@ -43,12 +43,64 @@ function subtraction(){
   if(isNaN(y)){
     alert("Please enter a number.");
   }
-  
+
   //Doing the math
  z = y - x
-  
+
   // alert to user to give answer
-  alert("subtracting " + x + " from " + y + " equals " + z); 
+  alert("subtracting " + x + " from " + y + " equals " + z);
 }
 
+function multiplication()
+{
+  // initialize variables
+  var x, y, ans;
 
+  // check for numbers
+  do
+  {
+    x = parseFloat(prompt("Enter first number",""));
+    console.log("for x received " + x);
+  }
+  while (isNaN(x));
+  do
+  {
+    y = parseFloat(prompt("Enter second number",""));
+    console.log("for y received " + y);
+  }
+  while (isNaN(y));
+
+  // math
+  ans = x * y;
+  console.log("answer is " + ans)
+
+  // alert to user
+  alert("Multiplication of " + x + " and " + y + " is " + ans);
+}
+
+function division()
+{
+  // initialize variables
+  var x, y, ans;
+
+  // check for number
+  do
+  {
+    x = parseFloat(prompt("Enter first number",""));
+    console.log("for x received " + x);
+  }
+  while (isNaN(x));
+  do
+  {
+    y = parseFloat(prompt("Enter second number",""));
+    console.log("for y received " + y);
+  }
+  while (isNaN(y));
+
+  // math
+  ans = x / y;
+  console.log("answer is " + ans)
+
+  // alert to user
+  alert("Division of " + x + " by " + y + " is " + ans);
+}
