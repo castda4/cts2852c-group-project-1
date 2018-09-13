@@ -4,3 +4,5 @@
 #### Nelson Brumaire
 * Created addition();
 
+#### Andrea Berryman
+* created substraction();
